@@ -87,4 +87,4 @@ jobs:
         :: Should fail
         target\debug\prusti-rustc.exe \
           prusti-tests\tests\verify\fail\no-annotations\assert-false.rs
-        if %errorlevel%==0 exit /b 1
+        if %errorlevel%==0 (exit /b 1)
